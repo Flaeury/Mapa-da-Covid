@@ -1,0 +1,323 @@
+* {
+  font-family: 'Circular Std', sans-serif;
+  font-size: 100%;
+}
+
+@font-face {
+  font-family: Circular Std;
+  font-style: normal;
+  font-weight: normal;
+  src: url("/assets/fonts/CircularStd-Book.otf");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: Circular Std;
+  font-style: normal;
+  font-weight: 500;
+  src: url("/assets/fonts/CircularStd-Medium.otf");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: Circular Std;
+  font-style: normal;
+  font-weight: bold;
+  src: url("/assets/fonts/CircularStd-Bold.otf");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: Circular Std;
+  font-style: normal;
+  font-weight: 900;
+  src: url("/assets/fonts/CircularStd-Black.otf");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+
+main {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background: linear-gradient(179deg, rgba(15, 16, 16, 1) 0%, rgba(32, 118, 169, 1) 60%, rgba(32, 166, 240, 1) 100%);
+}
+
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 89.5vw;
+  height: 4vw;
+  padding: 0;
+}
+
+.navbar img {
+  width: 100%;
+  max-width: 17%;
+  margin: 0 12.2vw;
+}
+
+.navbar a {
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 1.5vw;
+  text-decoration: none;
+  font-size: 1vw;
+  font-family: 'Circular Std', sans-serif;
+  color: #172b3e;
+  font-weight: 600;
+}
+
+.container {
+  width: 100% !important;
+  max-width: 77vw !important;
+  display: table;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.titulo {
+  margin: 1.7vw 0;
+}
+
+.covid-text {
+  font-family: 'Circular Std', sans-serif;
+  font-size: 0.97vw;
+  color: #ffffff;
+  margin: 0.2vw 0;
+  font-weight: 600;
+}
+
+.titulo span {
+  font-weight: 100;
+}
+
+.titulo h2 {
+  font-size: 1.95vw;
+  font-family: 'Circular Std', sans-serif;
+  color: #ffffff;
+  font-weight: 700;
+  margin: 0.2vw 0;
+}
+
+.titulo img {
+  width: 100%;
+  max-width: 5vw;
+}
+
+.covid-img {
+  display: flex;
+  align-items: center;
+
+}
+
+.BR {
+  font-family: 'Arial', sans-serif;
+  font-size: 0.95vw;
+  color: #ffffff;
+  margin: 0.2vw 0;
+  font-weight: 100;
+}
+
+.cards-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-h2 {
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  font-family: 'Circular Std', sans-serif;
+  font-weight: 500;
+  font-size: 1.2vw;
+  color: #172b3e;
+  margin: 0.85vw 0.3vw;
+}
+
+.card {
+  padding: 0.33vw 1vw;
+  border-color: none;
+}
+
+.brasil-mapa {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-radius: 0.5vw;
+}
+
+.h2-titulo {
+  color: white;
+  font-size: 1.5vw;
+  font-family: 'Circular Std', sans-serif;
+  font-weight: 700;
+  margin: 0.2vw 0;
+}
+
+.h2-titulo span {
+  font-weight: lighter;
+}
+
+.titulo-map {
+  display: flex;
+  align-items: center;
+  margin: 1.45vw auto;
+}
+
+#mapa {
+  display: block;
+  height: 1vw;
+  width: 1vw;
+  margin: 0;
+}
+
+#mapa a {
+  text-decoration: none;
+  margin-top: 5vw
+}
+
+path {
+  fill: #dddddd;
+  stroke: #000000 !important;
+  stroke-width: 1;
+  cursor: pointer;
+}
+
+path:hover {
+  fill: gray !important;
+}
+
+#svg-map {
+  display: block;
+  margin: 2vw 0;
+}
+
+.borda {
+  border-top: 1px solid #29a7c7;
+  display: flex;
+  align-items: center;
+  justify-items: space-between;
+  text-align: center;
+}
+
+.dados-estados p {
+  font-family: 'Circular Std', sans-serif;
+  font-size: 0.88vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding: 0.5vw 0;
+  margin: 0.2vw 0;
+  font-weight: 500;
+}
+
+.dados-estados h3 {
+  font-size: 1.05vw;
+  font-family: 'Circular Std', sans-serif;
+  font-weight: 500;
+  margin-right: 0.8vw;
+  color: #172b3e;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0.1vw 0.7vw;
+}
+
+.dados-estados {
+  padding: 1.3vw 1vw;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(9,
+      1fr);
+  gap: 0;
+}
+
+.dados-estados div {
+  display: flex;
+  width: auto;
+  margin: 0 auto;
+}
+
+.estados-mapa {
+  background-color: white;
+  border-radius: 0.5vw;
+  margin: 0;
+}
+
+.mapaRed {
+  fill: #eb1e1e;
+}
+
+.card-brasil a {
+  text-decoration: none;
+}
+
+#xEsc:hover {
+  cursor: pointer;
+  color: red;
+}
+
+.card-mapa p {
+  font-size: 1vw;
+  font-family: 'Circular Std', sans-serif;
+  font-weight: 400;
+}
+
+.card-mapa {
+  margin-top: 3.5vw;
+  margin-right: 14.8vw;
+  text-align: center;
+  display: flex;
+}
+
+.card-mapa button {
+  font-size: 1vw;
+  border: 0.5px;
+  background-color: #29a7c7;
+  font-family: 'Circular Std', sans-serif;
+  font-weight: 400;
+  color: white;
+  border-radius: 0.5vw;
+  margin: 1vw 0;
+}
+
+.card-mapa h2 {
+  font-size: 1.35vw;
+  font-family: 'Circular Std', sans-serif;
+  font-weight: 600;
+  
+}
+
+.card .card-mapa {
+  display: none;
+}
+
+.card-mapa textarea {
+  resize: both;
+  width: 12.55vw;
+  height: 6vw;
+}
+
+#xEsc {
+  text-align: end !important;
+}
+footer {
+  background-color: white;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+footer img {
+  width: 100%;
+  max-width: 20vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 1.7vw 0;
+}
